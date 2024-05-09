@@ -92,27 +92,25 @@ const Navbar = () => {
           Shop Detail
         </li>
         <li
-          className="font-bold  flex gap-2  hover:text-yellow-500 cursor-pointer  "
+          className="font-bold  flex justify-center align-middle gap-2  hover:text-yellow-500 cursor-pointer  "
           onClick={() => setSowPage(!sowpage)}
         >
-          pages{" "}
-          <span className=" text-white flex justify-center align-middle">
+          Pages <span className=" text-white flex justify-center align-middle pt-1 hover:text-yellow-500">
             <IoIosArrowForward className="text-white" />
           </span>
+        
           <ul
             className={`absolute right-1/3 top-44 mt-2 w-36 bg-white text-black shadow-md rounded-md ${
               sowpage ? "" : "hidden"
             }`}
           >
             <li className="font-bold border hover:bg-yellow-500">
-              Mens Dresses
+             Shoping Cart 
             </li>
             <li className="font-bold border hover:bg-yellow-500">
-              Womens Dresses
+              Checkout
             </li>
-            <li className="font-bold border hover:bg-yellow-500">
-              Baby Dresses
-            </li>
+            
           </ul>
         </li>
         <li className="font-bold hover:text-yellow-500 cursor-pointer ">
@@ -122,10 +120,12 @@ const Navbar = () => {
 
       <ul className="flex align-middle justify-center gap-10 text-white">
         <li className=" font-bold text-2xl" >
-          <FcLikePlaceholder />
+      
+          <FcLikePlaceholder className="text-yellow-500 text-2xl" />
+          
         </li>
         <li className=" font-bold text-2xl">
-          <IoCartOutline />
+          <IoCartOutline className="text-yellow-500 text-2xl" /> 
         </li>
       </ul>
     </div>
