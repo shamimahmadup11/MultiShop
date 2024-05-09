@@ -13,7 +13,7 @@ const Header = () => {
 
 
   return (
-    <header className="h-12 w-scree bg-gray-300 text-black py-4 flex justify-center align-middle">
+    <header className="h-12 w-scree bg-gray-300 text-black py-8 flex justify-around align-middle">
       <div className="container mx-auto flex justify-between items-center">
       
         <nav>
@@ -101,9 +101,9 @@ const Header = () => {
                 }
             }>My Account <span><MdKeyboardArrowDown /></span>
                             </button>
-            <ul className={`absolute right-0 mt-10  w-36 bg-yellow-400  shadow-md rounded-md ${showAccountOptions ? '' : 'hidden'}`}>
-              <li className='  font-bold border '><a href="#">Log In</a></li>
-              <li className=' font-bold border'><a href="#">Log Out</a></li>
+            <ul className={`absolute right-0 mt-10  w-36   shadow-md rounded-md bg-white ${showAccountOptions ? '' : 'hidden'}`}>
+              <li className='  font-bold border hover:bg-yellow-400 '><a href="#">Log In</a></li>
+              <li className=' font-bold border hover:bg-yellow-400'><a href="#">Log Out</a></li>
             </ul>
           </div>
           
@@ -121,10 +121,10 @@ const Header = () => {
                     }
                 }
             }>USD <MdKeyboardArrowDown /> <img src="" alt="" /> </button>
-            <ul className={`absolute right-0 mt-2 w-36 bg-yellow-400  shadow-md rounded-md ${showCurrencyOptions ? '' : 'hidden'}`}>
-              <li className=' font-bold border'><a href="#">EUR</a></li>
-              <li className=' font-bold border'><a href="#">GBP</a></li>
-              <li className='font-bold border'  ><a href="#">CAD</a></li>
+            <ul className={`absolute right-0 mt-2 w-36 bg-white shadow-md rounded-md ${showCurrencyOptions ? '' : 'hidden'}`}>
+              <li className=' font-bold border hover:bg-yellow-400 '><a href="#">EUR</a></li>
+              <li className=' font-bold border hover:bg-yellow-400 '><a href="#">GBP</a></li>
+              <li className='font-bold border hover:bg-yellow-400 '  ><a href="#">CAD</a></li>
             </ul>
           </div>
           
@@ -141,10 +141,10 @@ const Header = () => {
                     }
                     
                 } }>EN <MdKeyboardArrowDown /></button>
-            <ul className={`absolute right-0 mt-2 w-36  bg-yellow-400 shadow-md rounded-md ${showLanguageOptions ? '' : 'hidden'}`}>
-              <li className=' font-bold border'><a href="#">FR</a></li>
-              <li className=' font-bold border'><a href="#">AR</a></li>
-              <li className=' font-bold border'><a href="#">RU</a></li>
+            <ul className={`absolute right-0 mt-2 w-36 bg-white shadow-md rounded-md ${showLanguageOptions ? '' : 'hidden'}`}>
+              <li className=' font-bold border hover:bg-yellow-400 '><a href="#">FR</a></li>
+              <li className=' font-bold border hover:bg-yellow-400 '><a href="#">AR</a></li>
+              <li className=' font-bold border hover:bg-yellow-400 '><a href="#">RU</a></li>
             </ul>
           </div>
         </div>
