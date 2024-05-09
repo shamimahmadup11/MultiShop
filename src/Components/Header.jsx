@@ -13,9 +13,8 @@ const Header = () => {
 
 
   return (
-    <header className="h-12 w-scree bg-gray-300 text-black py-8 flex justify-around align-middle">
-      <div className="container mx-auto flex justify-between items-center">
-      
+    <header className="h-12 w-scree bg-gray-300 text-black flex justify-around align-middle">
+      <div className="container mx-auto flex justify-around items-center">
         <nav>
           <ul className="flex space-x-4">
             <li className='font-bold'><a href="#" className={`rounded-md hover:text-green-900 h-12 w-20 ${Stayatanavabout ?  'bg-green-500' : 'bg-gray-300' }`} onClick={()=>
@@ -86,9 +85,9 @@ const Header = () => {
         </nav>
         
      
-        <div className="flex space-x-4 gap-3">
+        <div className="flex space-x-4">
          
-          <div className="relative flex justify-center align-middle gap-8">
+          <div className="relative flex justify-around align-middle ">
             <button className= " rounded  bg-white h-8 w-28 flex justify-center align-middle font-bold border-x-slate-300 hover:text-green-900 " onClick={() =>  
                 {
                     setShowAccountOptions(!showAccountOptions);
@@ -101,7 +100,7 @@ const Header = () => {
                 }
             }>My Account <span><MdKeyboardArrowDown /></span>
                             </button>
-            <ul className={`absolute right-0 mt-10  w-36   shadow-md rounded-md bg-white ${showAccountOptions ? '' : 'hidden'}`}>
+            <ul className={`absolute right-0 mt-10  w-36 shadow-md rounded-md bg-white ${showAccountOptions ? '' : 'hidden'}`}>
               <li className='  font-bold border hover:bg-yellow-400 '><a href="#">Log In</a></li>
               <li className=' font-bold border hover:bg-yellow-400'><a href="#">Log Out</a></li>
             </ul>
@@ -142,9 +141,9 @@ const Header = () => {
                     
                 } }>EN <MdKeyboardArrowDown /></button>
             <ul className={`absolute right-0 mt-2 w-36 bg-white shadow-md rounded-md ${showLanguageOptions ? '' : 'hidden'}`}>
-              <li className=' font-bold border hover:bg-yellow-400 '><a href="#">FR</a></li>
-              <li className=' font-bold border hover:bg-yellow-400 '><a href="#">AR</a></li>
-              <li className=' font-bold border hover:bg-yellow-400 '><a href="#">RU</a></li>
+              <li className=' font-bold border hover:bg-yellow-400 '>FR</li>
+              <li className=' font-bold border hover:bg-yellow-400 '>AR</li>
+              <li className=' font-bold border hover:bg-yellow-400 '>RU</li>
             </ul>
           </div>
         </div>
