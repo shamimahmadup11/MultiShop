@@ -34,12 +34,12 @@ const Body = () => {
         <img src={images[index]} alt="" className="h-2/3 block w-2/3" />
         <div className="absolute inset-0 flex items-center justify-center">
           <button className= "h-18 w-44 bg-yellow-500 text-white text-xl font-bold hover:bg-slate-500 py-2 px-4 border border-blue-700 rounded">
-            Button
+            Shop Now
           </button>
         </div>
         <div className="absolute bottom-20 left-10 right-32 flex justify-center gap-2">
           <button
-            className={`h-5 border-black bg-yellow-500 mb-14 ${
+            className={`h-5 border-black bg-yellow-500 mt-9 ${
               buttonStates[0] ? "w-10" : "w-5"
             }`}
             onClick={() => {
@@ -48,7 +48,7 @@ const Body = () => {
             }}
           ></button>
           <button
-            className={`h-5 border-black bg-yellow-500 mb-14 ${
+            className={`h-5 border-black bg-yellow-500 mt-9  ${
               buttonStates[1] ? "w-10" : "w-5"
             }`}
             onClick={() => {
@@ -57,7 +57,7 @@ const Body = () => {
             }}
           ></button>
           <button
-            className={`h-5 border-black bg-yellow-500 mb-14 ${
+            className={`h-5 border-black bg-yellow-500 mt-9  ${
               buttonStates[2] ? "w-10" : "w-5"
             }`}
             onClick={() => {
