@@ -1,15 +1,22 @@
+
+import Body from "./Components/Body"
+import CategoriesData from "./Components/CatagorisData"
+import FeatureProducs from "./Components/FeatureProducs"
+import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Logo from "./Components/Logo"
 import Navbar from "./Components/Navbar"
 
-// import './App.css'
-
 const App = () => {
   return (
-    <div>
-      <Header/>
-      <Logo/>
-      <Navbar/>
+    <div className=" overflow-hidden">
+     <Header/>
+     <Logo/>
+     <Navbar/>
+     <Body/>
+     <CategoriesData/>
+     <FeatureProducs/>
+     <Footer/>
     </div>
   )
 }

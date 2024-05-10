@@ -10,7 +10,7 @@ const Navbar = () => {
   const [sowpage, setSowPage] = useState(false);
 
   return (
-    <div className="h-14 w-screen bg-slate-700 flex justify-around items-center mt-4 px-4">
+    <div className="h-14 w-screen bg-slate-700 flex justify-around items-center mt-4 px-4 z-10">
       <div className="relative">
         <button
           className="h-14 w-44 font-bold text-xl border-black text-black flex flex-row justify-center align-middle  gap-2 bg-yellow-500 "
@@ -133,3 +133,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
